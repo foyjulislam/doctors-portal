@@ -14,7 +14,7 @@ const AppointmentItem = (props) => {
     const [isLoading, setIsLoading] = useState(true);
     
     useEffect(()=>{
-        fetch('https://limitless-beyond-11226.herokuapp.com/services')
+        fetch('http://localhost:4200/services')
         .then(res => res.json())
         .then(data => {
             setIsLoading(false)
