@@ -12,7 +12,7 @@ const ScheduleList = () => {
 
     useEffect(()=>{
         setIsLoading(true)
-        fetch('https://limitless-beyond-11226.herokuapp.com/dailyAppointment/' + date.toDateString())
+        fetch('http://localhost:4200/dailyAppointment/' + date.toDateString())
         .then(res => res.json())
         .then(data => {
             if(data.message){

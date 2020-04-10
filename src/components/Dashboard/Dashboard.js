@@ -3,7 +3,14 @@ import React from 'react';
 const Dashboard = () => {
     return (
         <div>
-            <h2>Doctor Dashboard</h2>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-3"></div>
+                    <div className="col-md-3"></div>
+                    <div className="col-md-3"></div>
+                    <div className="col-md-3"></div>
+                </div>
+            </div>
         </div>
     );
 };
