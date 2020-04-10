@@ -1,0 +1,32 @@
+.top-banner{
+    background-image: url(../../images/Mask\ Group\ 4.png);
+    height: 700px;
+}
+/* .container{
+    margin:0;
+     background-image: url(../../images/top.png);
+  } */
+.top-left{
+    margin-top: 120px;
+    
+    text-align: justify;
+    padding:0px;
+    color: white;
+}
+.top-left h1{
+    color: black;
+}
+.top-left p{
+    padding: 30px 0;
+    font-weight: 500;
+    color:black;
+    width: 500px;
+}
+.top-right{
+    padding: 0px;
+    
+    color: white;
+}
+.btn{
+    font-weight: 600;
+}

@@ -1,14 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Homepage from './components/HomePage/Homepage';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import GetAppointment from './components/GetAppointment/GetAppointment';
+
+import NotFound from './components/NotFound/NotFound';
+import Dashboard from './components/Dashboard/Dashboard';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+    <div>
+      <Header></Header>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route path="/dashboard">
+            <Dashboard></Dashboard>
+          </Route>
+          <Route path="/get-appointment">
+            <GetAppointment></GetAppointment>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
